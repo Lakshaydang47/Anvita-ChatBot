@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anvita</title>
+    
+    <!-- linking google font icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40..48,100..700,0..1,-50..200&family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@40..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="chatbot-toggler">
+        <span class="material-symbols-outlined"><img src="chatbot-chat-message-vectorart_78370-4104.avif" alt="avatar" height="50px" ></span>
+        <span class="material-symbols-outlined">close</span>
+    </button>
+    <div class="chatbox-popup">
+        <!-- Chat bot header -->
+        <div class="chat-header">
+            <div class="header-info">
+                <img class="chatbot-logo" src="chatbot-chat-message-vectorart_78370-4104.avif" alt="Chat image" width="50" height="50">
+                <h2 class="logo-text">Anvita</h2>
+            </div>
+            <button id="close-chatbot" class="material-symbols-rounded">keyboard_arrow_down</button>
+        </div>
+
+        <!-- chat bot body -->
+        <div class="chat-body">
+            <div class="message bot-message">
+                <img class="box-avatar" src="chatbot-chat-message-vectorart_78370-4104.avif" alt="Chat image" width="50" height="50">
+                <div class="message-text">Hello 👋, welcome to Aarogya Connect.<br> I am Anvita, your virtual assistant. How can I help you today?</div>
+            </div>
+        </div>
+        <!-- chat bot footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="Message..." class="message-input" required></textarea>
+                <div class="chat-controls">
+                    <button type="button" id="emoji-picker" class="material-symbols-outlined">sentiment_very_satisfied</button>
+                    <button type="submit"  id="send-message" class="material-symbols-rounded">arrow_upward</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- importing emoji mart -->
+    <script src="https://cdn.jsdelivr.net/npm/emoji-mart@latest/dist/browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
